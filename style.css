@@ -16,25 +16,20 @@ Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
 
-/*.kontakty {
+.kontakty {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2em;
+	
 	
 
-}*/
+}
 
 h1 {
 	text-align: center;
 }
 
 
-.zena {
-	display: flex;
-	flex-wrap: wrap;
-	border: 2px solid rgb(3, 2, 2);
-	margin: 2px;
-}
+
 
 img {
 	border-radius: 50%;
@@ -44,18 +39,56 @@ img {
 
 @media (max-width: 540px) {
 	.kontakty {
-	  flex-direction: column;
+		display: flex;
+		flex-direction: column;
+	  }
+	
+	  .zena {
+		display: flex;
+		flex-wrap: wrap;
+		border: 2px solid rgb(115, 154, 175);
+		border-radius: 10px;
+		margin: 2px;
 	}
+
+	img {
+		position: relative;
+	}
+
+	.text {
+		padding: 10px 10px;
+		
+
+	}
+	
   }
 
   @media (min-width: 540px) {
 	.kontakty {
+	  display: flex;
 	  flex-direction: row;
 	}
-  }
+	.zena {
+		display: flex;
+		flex-wrap: wrap;
+		border: 2px solid rgb(115, 154, 175);
+		border-radius: 10px;
+		margin: 2px;
+	}
+}
 
   @media (min-width: 940px) {
 	.kontakty {
+      display: flex;
 	  flex-direction: row;
+	  padding: 10px 10px;
+	}
+
+	.zena {
+		display: flex;
+		flex-wrap: wrap;
+		border: 2px solid rgb(115, 154, 175);
+		border-radius: 10px;
+		margin: 2px;
 	}
   }
