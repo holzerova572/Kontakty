@@ -46,18 +46,13 @@ img {
 	  .zena {
 		display: flex;
 		flex-wrap: wrap;
-		
+		flex-direction: column;
+		align-items: center;
 		text-align: center;
 		border: 2px solid rgb(115, 154, 175);
 		border-radius: 10px;
 		margin: 10px;
-		padding: 10px 120px;
-	}
-
-
-	.obrazek {
-		/*align-items: center;*/
-	}
+	  }
 
 	.text {
 		padding: 10px 10px;	
@@ -78,7 +73,7 @@ img {
 		border: 2px solid rgb(115, 154, 175);
 		border-radius: 10px;
 		margin: 2px;
-		max-width: 960px;
+		order: 2;
 	}
 }
 
@@ -86,14 +81,22 @@ img {
 	.kontakty {
      display: flex;
 	 flex-direction: row;
-	 padding: 20px 0px;
 	 align-items: center;
+	 justify-content: center;
+	 text-align: center;
+	 padding: 20px 0px;
+	
 	}
 
 	.zena {
 		display: flex;
+		flex-direction: column;
 		border: 2px solid rgb(115, 154, 175);
 		border-radius: 10px;
 		margin: 5px;
+		flex-basis: 0;
+		flex-shrink: 0;
+		flex-grow: 10;
+		
 	}
   }
