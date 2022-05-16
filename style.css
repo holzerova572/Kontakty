@@ -33,31 +33,34 @@ h1 {
 
 img {
 	border-radius: 50%;
-	margin: 5px;
+	margin: 20px 40px;
 }
 
 
 @media (max-width: 540px) {
 	.kontakty {
 		display: flex;
-		flex-direction: column;
+		/*flex-direction: column;*/
 	  }
 	
 	  .zena {
 		display: flex;
 		flex-wrap: wrap;
+		
+		text-align: center;
 		border: 2px solid rgb(115, 154, 175);
 		border-radius: 10px;
-		margin: 2px;
+		margin: 10px;
+		padding: 10px 120px;
 	}
 
-	img {
-		position: relative;
+
+	.obrazek {
+		/*align-items: center;*/
 	}
 
 	.text {
-		padding: 10px 10px;
-		
+		padding: 10px 10px;	
 
 	}
 	
@@ -71,24 +74,26 @@ img {
 	.zena {
 		display: flex;
 		flex-wrap: wrap;
+		align-items: center;
 		border: 2px solid rgb(115, 154, 175);
 		border-radius: 10px;
 		margin: 2px;
+		max-width: 960px;
 	}
 }
 
   @media (min-width: 940px) {
 	.kontakty {
-      display: flex;
-	  flex-direction: row;
-	  padding: 10px 10px;
+     display: flex;
+	 flex-direction: row;
+	 padding: 20px 0px;
+	 align-items: center;
 	}
 
 	.zena {
 		display: flex;
-		flex-wrap: wrap;
 		border: 2px solid rgb(115, 154, 175);
 		border-radius: 10px;
-		margin: 2px;
+		margin: 5px;
 	}
   }
